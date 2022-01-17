@@ -15,16 +15,15 @@
         pulaLinha();
 }
 
-var pesoFlavio = 73;
-var alturaFlavio = 1.71;
-var imcFlavio = pesoFlavio / (alturaFlavio * alturaFlavio);
+function calculaImc(altura, peso) {
 
-mostra ("O Imc do Flávio é " + imcFlavio);
+var imc = peso / (altura* altura);
+mostra("O imc calculado é " + imc);
 
-var pesoAmigo = 68;
-var alturaAmigo = 1.72;
-var imcAmigo = pesoAmigo / (alturaAmigo * alturaAmigo);
-mostra("O imc do meu amigo é " + imcAmigo); 
+}
 
+
+calculaImc(1.71, 73);
+calculaImc(1.72, 68);
 
 </script>
