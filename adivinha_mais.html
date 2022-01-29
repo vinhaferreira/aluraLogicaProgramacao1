@@ -4,20 +4,25 @@
 <button>Compare com o meu segredo</button>
 
 <script>
-    var segredo = Math.round(Math.random() * 10);
+
+    var segredos = [5,7,10,2];
 
     var input = document.querySelector("input");
         input.focus();
 
     function verifica() {
 
-        if(input.value == segredo) {
+            for(var posicao = 0; posicao < 4; posicao++) {
 
-        alert("Você ACERTOU!");
+                if(input.value == segredos[posicao]) {
+
+                    alert("Você ACERTOU!");
+                    break;
         } else {
 
-        alert("Você ERROU!!!!!!!!");
+                    alert("Você ERROU!!!!!!!!");
         }
+            }
 
                 input.value = "";
                 input.focus();
